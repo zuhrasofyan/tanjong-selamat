@@ -1,1 +1,45 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+.entry-title {
+	a {
+		color: black;
+	}
+}
+
+.custom-header {
+	width: 100%;
+}
+
+.image-pade {
+	//width: 100%;
+	position: relative; 
+	img {
+		width: 100%;
+	}
+	h2  {
+		position: absolute; 
+	   	top: 200px; 
+	   	left: 0; 
+	   	width: 100%;
+	   	span {
+	   		color: white; 
+		   	font: bold 24px/45px Helvetica, Sans-Serif; 
+		   	letter-spacing: -1px;  
+		   	background: rgb(0, 0, 0); /* fallback color */
+		   	background: rgba(0, 0, 0, 0.7);
+		   	padding: 10px; 
+	   }
+	}
+	.caption {
+		position: absolute;
+	    top: 45%;
+	    //left: 40%;
+		width: 100%;
+		color: white; 
+		   	font: bold 24px/45px Helvetica, Sans-Serif; 
+		   	letter-spacing: -1px;  
+		   	background: rgb(0, 0, 0); /* fallback color */
+		   	background: rgba(0, 0, 0, 0.7);
+		   	padding: 10px; 
+	}
+	
+}

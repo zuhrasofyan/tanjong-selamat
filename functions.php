@@ -67,3 +67,18 @@ require get_template_directory() . '/inc/bootstrap-wp-gallery.php';
 * Load WooCommerce functions.
 */
 require get_template_directory() . '/inc/woocommerce.php';
+
+
+/**
+* Zuhra custom functionality
+*/
+$args = array(
+	'flex-width'    => true,
+	'width'         => 980,
+	'flex-height'   => true,
+	'height'        => 200,
+	'header-text'   => true,
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );

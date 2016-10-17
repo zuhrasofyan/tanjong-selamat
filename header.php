@@ -23,7 +23,16 @@
 <body <?php body_class(); ?>>
 
 <div id="page" class="hfeed site">
-    
+
+    <?php if ( get_header_image() ) : ?>
+        <div class="image-pade text-xs-center">
+            <img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="img-responsive">
+            <div class="caption">
+                Lorem Ipsum
+            </div>
+        </div>
+    <?php endif; ?>
+
     <!-- ******************* The Navbar Area ******************* -->
     <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 	

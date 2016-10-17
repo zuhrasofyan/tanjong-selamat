@@ -7173,3 +7173,38 @@ a.skip-link {
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
+
+.entry-title a {
+  color: black; }
+
+.custom-header {
+  width: 100%; }
+
+.image-pade {
+  position: relative; }
+  .image-pade img {
+    width: 100%; }
+  .image-pade h2 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%; }
+    .image-pade h2 span {
+      color: white;
+      font: bold 24px/45px Helvetica, Sans-Serif;
+      letter-spacing: -1px;
+      background: black;
+      /* fallback color */
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px; }
+  .image-pade .caption {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: white;
+    font: bold 24px/45px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    background: black;
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px; }
