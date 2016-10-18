@@ -24,7 +24,7 @@
                         <a href="<?php echo esc_url( __( 'http://rambideunt.com/', 'understrap' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'understrap' ), 'Rambideunt' ); ?></a>
                         <span class="sep"> | </span>
                         <?php printf( __( 'Theme: %1$s by %2$s.', 'understrap' ), 'TanjongSelamat', '<a href="http://rambideunt.com/theme" rel="designer">rambideunt.com</a>' ); ?> 
-                        (<?php printf( __( 'Version', 'understrap' ) ); ?>: 1.0.0)
+                        (<?php printf( __( 'Version', 'understrap' ) ); ?>: 0.0.1)
                     </div><!-- .site-info -->
 
                 </footer><!-- #colophon -->
