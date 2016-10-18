@@ -24,63 +24,47 @@
 
 <div id="page" class="hfeed site">
 
+    <!-- ******************* The Navbar Area ******************* -->
+    <nav class="navbar navbar-light navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Your site title as branding in the menu -->
+                <?php if (!has_custom_logo()) { ?>
+                    <a class="navbar-brand hidden-xs-down" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                        <?php bloginfo( 'name' ); ?>
+                    </a>
+                <?php } else { ?> <div class="hidden-xs-down"><?php the_custom_logo(); } ?></div><!-- end custom logo -->
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+            </div>
+            
+            <?php wp_nav_menu(
+                array(
+                    'theme_location' => 'primary',
+                    'container_class' => 'collapse navbar-toggleable-xs pull-right',
+                    'container_id' => 'exCollapsingNavbar2',
+                    'menu_class' => 'nav navbar-nav',
+                    'fallback_cb' => '',
+                    'menu_id' => 'main-menu',
+                    'walker' => new wp_bootstrap_navwalker()
+                )
+            ); ?>
+        </div>
+        
+    </nav>
+
+
     <?php if ( get_header_image() ) : ?>
         <div class="image-pade text-xs-center">
-            <img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="img-responsive">
+            <img src="<?php header_image(); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" class="img-not-responsive">
             <div class="caption">
                 Lorem Ipsum
             </div>
         </div>
     <?php endif; ?>
 
-    <!-- ******************* The Navbar Area ******************* -->
-    <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
-	
-        <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
-
-        <nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-                            
-
-                <div class="container">
-
-
-                            <div class="navbar-header">
-
-                                <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-
-                                  <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".exCollapsingNavbar">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-
-                                <!-- Your site title as branding in the menu -->
-	                                <?php if (!has_custom_logo()) { ?>
-		                                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-		                                	<?php bloginfo( 'name' ); ?>
-		                                </a>
-	                                <?php } else { the_custom_logo(); } ?><!-- end custom logo -->
-
-                            </div>
-
-                            <!-- The WordPress Menu goes here -->
-                            <?php wp_nav_menu(
-                                    array(
-                                        'theme_location' => 'primary',
-                                        'container_class' => 'collapse navbar-toggleable-xs exCollapsingNavbar',
-                                        'menu_class' => 'nav navbar-nav',
-                                        'fallback_cb' => '',
-                                        'menu_id' => 'main-menu',
-                                        'walker' => new wp_bootstrap_navwalker()
-                                    )
-                            ); ?>
-
-                </div> <!-- .container -->
-            
-        </nav><!-- .site-navigation -->
-        
-    </div><!-- .wrapper-navbar end -->
+    
 
 
 

@@ -82,3 +82,28 @@ $args = array(
 	'uploads'       => true,
 );
 add_theme_support( 'custom-header', $args );
+
+
+/**
+* Make Header Shrink on Page Scroll
+**/
+ 
+add_action ('wp_footer','vr_shrink_head',1);
+function vr_shrink_head() {
+?>
+ 
+<script>
+jQuery(document).ready(function($) {
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 50) { 
+            $('nav').addClass('shrink');
+        }
+        else{
+            $('nav').removeClass('shrink');
+        }
+    });
+});
+</script>
+ 
+<?php 
+}

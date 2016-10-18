@@ -1,2 +1,7 @@
 node_modules/
 src/
+css/theme.css
+
+css/theme.min.css
+
+css/theme.min.css.map
