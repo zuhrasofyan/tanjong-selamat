@@ -1,22 +1,20 @@
 /*
-Theme Name: UnderStrap
-Theme URI: http://understrap.com
-Author: Holger Koenemann
-Author URI: http://www.holgerkoenemann.de
-Description: Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid starting point for your next theme project and WordPress website. Use it as starter theme or as parent theme. It is up to you. Including Font Awesome support, build-in widget slider and much more you need for basic websites. IMPORTANT: All developer dependencies are not bundelt with this install file. Just donwload the .zip, extract it and run "npm install" and "gulp copy-assets" inside the extracted /understrap folder. 
-That downloads everything and move it in place so that you can recompile your CSS and JS files;
-A developer version (with Gulp/node and Sass sources) is available on gitHub: https://github.com/holger1411/understrap
-A child theme is available on Github, too: https://github.com/holger1411/understrap-child;
-Version: 0.4.8
+Theme Name: TanjongSelamat
+Theme URI: http://rambideunt.com/theme
+Author: Zuhra Sofyan
+Author URI: http://rambideunt.com
+Description: TanjongSelamat is a theme based on the understrap template
+Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: understrap
+Text Domain: tanjongselamat
 Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
-UnderStrap is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+TanjongSelamat is a theme based on the understrap template based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 
 Resource Licenses:
+UnderStrap: http://understrap.com
 Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.)
 Owl Carousel 2: http://www.owlcarousel.owlgraphic.com/ | https://github.com/smashingboxes/OwlCarousel2/blob/develop/LICENSE (Code licensed under MIT)
