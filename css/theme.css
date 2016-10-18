@@ -7183,7 +7183,8 @@ a.skip-link {
 .image-pade {
   position: relative; }
   .image-pade img {
-    width: 100%; }
+    width: 100%;
+    min-height: 200px; }
   .image-pade h2 {
     position: absolute;
     top: 200px;
@@ -7208,3 +7209,48 @@ a.skip-link {
     /* fallback color */
     background: rgba(0, 0, 0, 0.7);
     padding: 10px; }
+
+nav.navbar .container .navbar-header .hidden-xs-down .navbar-brand img {
+  width: 50px; }
+
+@media (min-width: 768px) {
+  nav.navbar {
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
+    nav.navbar .container .navbar-header .hidden-xs-down .navbar-brand img {
+      width: 100px;
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out; }
+    nav.navbar .container .navbar-toggleable-xs .navbar-nav .nav-link {
+      margin-left: .6rem;
+      margin-right: .6rem;
+      padding-top: 2rem;
+      transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out; } }
+
+nav.shrink {
+  background-color: #f7f7f9;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out; }
+  nav.shrink .container .navbar-header .hidden-xs-down .navbar-brand img {
+    width: 50px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
+  nav.shrink .container .navbar-toggleable-xs .navbar-nav .nav-link {
+    margin-left: .6rem;
+    margin-right: .6rem;
+    padding-top: 1rem;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out; }
