@@ -2,130 +2,29 @@ Start talking: [![Gitter](https://img.shields.io/gitter/room/holger1411/understr
 
 ## About
 
-I’m a huge fan of Underscores, Bootstrap, and Sass. Why not combine these into a solid WordPress Theme Framework?
-That’s what UnderStrap is. 
-You can use it as starter theme and build your own theme on top of it. Or you use it as parent theme and create your own child theme for UnderStrap.
+Tanjong Selamat is a leisure hobbyist project from zuhra. It is a theme based on the [understrap](https://github.com/holger1411/understrap) by awesome person [Holger Koenemann](http://www.holgerkoenemann.de/).
 
-At the moment, UnderStrap is in a very early stage. But if you wan’t, feel free to use it for your own WordPress theme!
+It is as free as a bird. I mean you can catch it, put it under your own wordpress cage, and no one will ever complain, as long as you feed it. Tho I prefer to let the birds flying free.
 
-# UnderStrap WordPress Theme Framework
+TanjongSelamat is a small village located on the small spot in westest part of Sumatra Island. It means safe cape.
 
-Website: [http://understrap.com](http://understrap.com)
+# TanjongSelamat Wordpress Theme
 
-Child Theme Project: [https://github.com/holger1411/understrap-child](https://github.com/holger1411/understrap-child)
+Author Website: [http://rambideunt.com](http://rambideunt.com)
+
 
 ## License
-UnderStrap is released under the terms of the GPL version 2 or (at your option) any later version.
+TanjongSelamat is released under the terms of the GPL version 2 or (at your option) any later version.
 
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 ## Changelog
-            - ** 0.4.8 Oct. 10th 2016 **
-                  - Removing Bower and replace the dependency managment with npm
-                  - Update to Bootstrap 4 Alpha 4
-                  - Optimizing WooCommerce loop -  Thx @typeplus
-                  - Updating all dependencies
-                  - Add WP Theme logo feature - Thx @jessijean
 
+            - ** 0.1 Oct. 18th 2016**
+                    - Shamelessly init from UnderStrap
+                    - Custom animated header
+                    - Add Indonesian translation
 
-            - ** 0.4.7 Aug. 15th 2016 **
-                  - Fixing problem with tag page
-                  - Fixing Navbar "hopping"
-                  - Global bugfixing and streamlining performance issues
-
-
-            - ** 0.4.6 Aug. 1st 2016 **
-                  - Update to Bootstrap 4 Alpha 3
-                  - Adding basic padding to aligned content images
-                  - Adding author.php template with author infos
-                  - Correct language file + german translation
-
-
-            - ** 0.4.5 Jun. 20th 2016 **
-                  - Adding right sanitizing function for customizer
-                  - Fixing some escaping problems
-                  - Removing "add script" customizer function 
-                  - Calling all sidebars with "get_sidebar"
-                  - Load hero area on index.php conditionally
-                  - Remove unused code, files and dependencies
-                  - Adding credits for WP Bootstrap Navwalker by Edward McIntyre
-
-
-            - ** 0.4.4 Jun. 18th 2016 **
-                   - Adding the new empty.php page template. Comes just with header, footer and a content area without markup. Good for build up landingpages. An empty canvas for your Bootstrap markup.
-                   - Update bower.json dependencies to latest versions
-                   - Update package.json dependencies to latest versions
-                   - Adding Theter script as dependency for BS4 tooltip component
-                   - Resorting gulpfile.js
-                   - Removing BS3 completely as dependency
-                   - Smaller bugfixes and code improvements
-
-
-            - ** 0.4.0 Apr. 29th 2016 **
-                   - Switching from Bootstrap 3 to Bootstrap 4
-                   - Adding BrowserSync to gulpfile (again thx to @dvlopes)
-                   - Preparing the navbar markup so that the current version will work with Bootstrap 3 AND 4
-                   - Adding "gulp scripts" command - This uglifies and minifies all JS files (except jQuery...) into one single JS file called theme.min.js
-                   - Updating Gulpfile - now "gulp copy-assets" command copies all files from dependency folders into mid-layer folder called "/src"
-                   - Load jQuery again as extra script instead of concat it into on single file. After some problems with WooCommerce and other plugins
-                   - Checking WordPress 4.5 compatibility
-                   - Updating language template
-                   - Adding Brazilian Portuguese (pt-BR) translation (thx to @dvlopes).
-
-
-            - ** 0.3.8 Mar. 9th 2016 **
-                   - Adding footer widget area
-                   - Adjust Bootstrap markup for searchform and search widget
-
-
-            - ** 0.3.7 Jan. 8th 2016**
-                   - Cleanup for submitting to WordPress.org theme repository:
-                        - Fixing sticky post problem
-                        - Fixing skip-to-content link
-                        - re-activating the admin bar
-                        - adding readme.txt
-                        - Fixing missing translation strings in comments template
-
-
-            - ** 0.3.6 Jan. 4th 2016**
-                   - Cleanup
-                   - Updating dependencies
-                   - Upgrade to Bootstrap 3.3.6 and Font Awesome 4.5.0
-
-
-            - ** 0.3.4 SEP. 9th 2015**
-                   - Adding basic WooCommerce support
-                   - Cleanup for submitting to wordpress.org
-                   - Removing _s SASS ... no need for basic styling. Thats Bootstrap´s job.
-
-
-            - ** 0.3.1 AUG. 12th 2015**
-                   - Adding bower dependency manager and replacing GRUNT taskrunner with GULP
-
-            - ** 0.3.0 Mar. 23th 2015**
-                   - Streamlining some code, adding extra "sticky" area (sticky posts above the main content area inside an extra loop). Fixing some child theme issues (now its really child theme ready...really...trust me...)
-
-            - ** 0.2.9 Mar. 10th 2015**
-                   - Adding a new theme customizer option. It lets you add a code snippet right before the closing </body> tag.
-                   For example for Google Analytics, Google Tag Mananger, Pingdom etc. Just copy and past your code to the input field and save the setting.
-                   So you don´t have to edit the theme source file´s directly and your theme stay´s updateable
-
-            - ** 0.2.8 Feb. 6th 2015**
-                   - Adding Grunt and Grunt SASS task
-
-
-            - ** 0.2.7 Jan. 26th 2015**
-                   - Adding some basic theme option for the build-in slider script
-
-            - ** 0.2.6 Dec. 28th 2014**
-                    - CLean up
-
-
-            - ** 0.2 Dec. 22th 2014**
-                    - Adding Jasny Off-Canvas nav and Owl.Carousel Slider script
-                    - Enqueue scipts and styled dynamically
-
-            - ** 0.1 Dec. 10th 2014 - First commit**
 
 
 ## Basic Features
@@ -140,11 +39,10 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 - WooCommerce support.
 - [Child Theme](https://github.com/holger1411/understrap-child) ready.
 - Translation ready.
+- Indonesia Translation
+- Shrink navbar
 
-## Starter Theme + HTML Framework = WordPress Theme Framework
-
-The _s theme is a good starting point to develop a WordPress theme. But it is “just” a raw starter theme. That means it outputs all the WordPress stuff correctly but without any layout or design.
-Why not add a well known and supported layout framework to have a solid, clean and responsive foundation? That’s where Bootstrap comes in.
+# UnderStrap Legacy 
 
 ## Confused by All the CSS and Sass Files?
 
@@ -212,3 +110,4 @@ Licenses & Credits
 and of course
 - jQuery: https://jquery.org | (Code licensed under MIT)
 - WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker | GNU GPL
+- [understrap](https://github.com/holger1411/understrap)
