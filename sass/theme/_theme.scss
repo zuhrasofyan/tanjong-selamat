@@ -67,6 +67,9 @@ nav.navbar {
 		-o-transition: all 0.5s ease-in-out;
 		.container {
 			.navbar-header {
+				.site-title {
+					padding-top:1.75rem;
+				}
 				.hidden-xs-down {
 					.navbar-brand {
 						img {
@@ -105,6 +108,9 @@ nav.shrink {
 	-o-transition: all 0.5s ease-in-out;
 	.container {
 		.navbar-header {
+			.site-title {
+				padding-top:.75rem;
+			}
 			.hidden-xs-down {
 				.navbar-brand {
 					img {

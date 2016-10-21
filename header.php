@@ -30,16 +30,14 @@
             <div class="navbar-header">
                 <!-- Your site title as branding in the menu -->
                 <?php if (!has_custom_logo()) { ?>
-                    <a class="navbar-brand hidden-xs-down" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                    <a class="navbar-brand site-title hidden-xs-down" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
                         <?php bloginfo( 'name' ); ?>
                     </a>
                 <?php } else { ?> <div class="hidden-xs-down"><?php the_custom_logo(); } ?></div><!-- end custom logo -->
                 <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
                     &#9776;
                 </button>
-            </div>
-            
-            <?php wp_nav_menu(
+                <?php wp_nav_menu(
                 array(
                     'theme_location' => 'primary',
                     'container_class' => 'collapse navbar-toggleable-xs pull-right',
@@ -50,6 +48,9 @@
                     'walker' => new wp_bootstrap_navwalker()
                 )
             ); ?>
+            </div>
+            
+            
         </div>
         
     </nav>
